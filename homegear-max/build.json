@@ -1,0 +1,10 @@
+{
+  "build_from": {
+    "armhf": "homeassistant/armhf-base-raspbian:buster",
+    "aarch64": "homeassistant/aarch64-base-debian:buster",
+    "armv7": "homeassistant/armv7-base-debian:buster"
+  },
+  "args": {
+    "HOMGEAR_VERSION": "nightly"
+  }
+}
