@@ -13,6 +13,7 @@
   "webui": "http://[HOST]:[PORT:2001]",
   "auto_uart": true,
   "gpio": true,
+  "apparmor": false,
   "image": "danielfernau/hassio-homegear-full-{arch}",
   "privileged": [
     "SYS_ADMIN",
@@ -32,7 +33,6 @@
   "schema": {},
   "devices": [
     "/dev/ttyAMA0:/dev/ttyAMA0:rwm",
-    "/dev/ttyACM0:/dev/ttyACM0:rwm",
     "/dev/spidev0.0:/dev/spidev0.0:rwm"
   ]
 }

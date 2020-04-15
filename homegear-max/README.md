@@ -8,12 +8,6 @@ Add this repo to Hassio as [described here](https://home-assistant.io/hassio/ins
 
 Don't get nervous after you've hit **Install**. Depending on your hardware, it may take up to half an hour before Homegear is installed. Once it appears in the list of installed add-ons, you'll have to **open** and **start** it.
 
-To use a TI CC1101 Module for eQ-3 MAX!, export the necessary GPIO pins before starting the add-on:  
-```bash
-echo 2 > /sys/class/gpio/export
-echo 25 > /sys/class/gpio/export
-```
-
 ## Plugins
 - max
 - influxdb

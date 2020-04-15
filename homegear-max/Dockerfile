@@ -20,6 +20,9 @@ RUN \
     rm /installNightly.sh; \
     cp -a /etc/homegear /etc/homegear.config; \
     cp -a /var/lib/homegear /var/lib/homegear.data; \
+    rm -rf /etc/homegear; \
+    rm -rf /var/lib/homegear; \
+    rm -rf /var/log/homegear; \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY start.sh /start.sh
